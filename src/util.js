@@ -7,3 +7,7 @@ const getCommonElements = (arrayA, arrayB) => {
 const generateRandomNumber = (min, max) => {
   return Math.floor(Math.random() * (max - min))
 }
+
+const showMessage = (message) => {
+    alert('Hello World !!!!')
+}
