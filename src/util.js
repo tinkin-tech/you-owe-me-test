@@ -11,3 +11,11 @@ const generateRandomNumber = (min, max) => {
 const showMessage = (message) => {
     alert('Hello World !!!!')
 }
+
+const removeDuplicatedElementFromArray = (array) => {
+  return [...new Set(array)]
+}
+
+const getValuesFromObject = (object) => {
+  return Object.values(object)
+}

@@ -26,3 +26,8 @@ const convertStringToArray = (string) => {
 const convertFahrenheitToCelsius = (fahrenheit) => {
   return (5/9) * (fahrenheit - 32)
 }
+
+
+const getValuesFromObject = (object) => {
+  return Object.values(object)
+}
