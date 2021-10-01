@@ -1,0 +1,14 @@
+{
+  "name": "fixtures",
+  "version": "1.0.0",
+  "description": "you-owe-me-test",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.2.4"
+  }
+}

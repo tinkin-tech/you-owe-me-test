@@ -12,11 +12,9 @@ const generateRandomNumber = (min, max) => {
   return Math.floor(Math.random() * (max - min))
 }
 
-
-const showMessage = (message) => {
-    alert('Hello World !!!!')
+const showMessageName = (name) => {
+    return `Hello ${name}, how are you?`
 }
-
 
 const convertStringToArray = (string) => {
   return string.split(' ')
@@ -30,4 +28,9 @@ const convertFahrenheitToCelsius = (fahrenheit) => {
 
 const getValuesFromObject = (object) => {
   return Object.values(object)
+}
+
+module.exports = {
+    sumTwoNumbers,
+    getCommonElements,
 }
