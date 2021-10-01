@@ -1,5 +1,5 @@
 const sumTwoNumbers = (numA, numB) => {
-    return numA + numB
+    return typeof numA === 'number' && typeof numB === 'number' ? numA + numB : 'Send only numbers';
 }
 
 const getCommonElements = (arrayA, arrayB) => {
@@ -9,25 +9,28 @@ const getCommonElements = (arrayA, arrayB) => {
 }
 
 const generateRandomNumber = (min, max) => {
-  return Math.floor(Math.random() * (max - min))
+    return Math.floor(Math.random() * (max - min))
 }
 
-
-const showMessage = (message) => {
-    alert('Hello World !!!!')
+const showMessageName = (name = 'Tinkin') => {
+    return `Hello ${name}, how are you?`
 }
-
 
 const convertStringToArray = (string) => {
-  return string.split(' ')
+    return string.split(' ')
 }
 
 
 const convertFahrenheitToCelsius = (fahrenheit) => {
-  return (5/9) * (fahrenheit - 32)
+    return (5 / 9) * (fahrenheit - 32)
 }
 
 
 const getValuesFromObject = (object) => {
-  return Object.values(object)
+    return Object.values(object)
+}
+
+module.exports = {
+    sumTwoNumbers,
+    showMessageName,
 }

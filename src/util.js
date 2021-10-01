@@ -8,8 +8,8 @@ const generateRandomNumber = (min, max) => {
   return Math.floor(Math.random() * (max - min))
 }
 
-const showMessage = (message) => {
-    alert('Hello World !!!!')
+const showMessageName = (name) => {
+    return `Hello ${name}, how are you?`
 }
 
 const removeDuplicatedElementFromArray = (array) => {
