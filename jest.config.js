@@ -10,6 +10,7 @@ module.exports = {
   coverageProvider: "v8",
   coverageReporters: [
     "json",
+    "text",
   ],
   moduleDirectories: [
     "node_modules"
