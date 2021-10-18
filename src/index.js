@@ -30,6 +30,20 @@ const getValuesFromObject = (object) => {
     return Object.values(object)
 }
 
+
+const divideNumbers = (dividend, divisor) => {
+    return dividend / divisor
+}
+
+
+const redondearTwoDecimals = (value, numberOfDigits) => {
+    return Number(value).toLocaleString('de-DE', {
+        maximumSignificantDigits: numberOfDigits,
+        minimumSignificantDigits: numberOfDigits,
+    })
+}
+
+
 module.exports = {
     sumTwoNumbers,
     showMessageName,
